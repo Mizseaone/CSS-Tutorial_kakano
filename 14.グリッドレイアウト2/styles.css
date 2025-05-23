@@ -2,28 +2,40 @@ div > div {
   text-align: center;
 }
 
+.container{
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px ;
+}
+
 .item1 {
   background-color: darkkhaki;
 }
 
 .item2 {
   background-color: aqua;
+  grid-row: span 2;
 }
 
 .item3 {
   background-color: blueviolet;
+  grid-row: 3 / span 2;
 }
 
 .item4 {
   background-color: green;
+  grid-column: 3;
 }
 
 .item5 {
   background-color: cadetblue;
+  grid-column: 3;
 }
 
 .item6 {
   background-color: crimson;
+  grid-row: span 2;
+grid-column: span 2;
 }
 
 
